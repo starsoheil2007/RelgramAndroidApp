@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.RolesAcceptFragmentViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activities.WebViewActivity">
+
+        <com.relgram.app.app.library.PersianTextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/title"
+            android:background="@drawable/btn_background"
+            android:gravity="center"
+            android:text="@string/roles"
+            android:textColor="@color/white" />
+
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/acceptRoles"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/btn_background"
+            android:text="@string/IAcceptRoles"
+            android:textColor="@color/white" />
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/acceptRoles"
+            android:layout_below="@+id/title">
+
+
+        </WebView>
+
+
+    </RelativeLayout>
+
+</layout>

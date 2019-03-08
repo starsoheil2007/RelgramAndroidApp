@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2ecefe</color>
+    <color name="colorPrimaryDark">#38a7f6</color>
+    <color name="colorAccent">#a6d2f1</color>
+
+    <color name="startColor">#2ecefe</color>
+    <color name="endColor">#38a7f6</color>
+    <color name="unselectedTab">#c7c7c7</color>
+    <color name="selectedTab">#878787</color>
+    <color name="white">#ffffff</color>
+
+    <color name="btn_start">#ff3131</color>
+    <color name="btn_end">#b11111</color>
+    <color name="gray_color">#e4e4e4</color>
+    <color name="gray_color_dark">#a9a9a9</color>
+    <color name="select_startColor">#007699</color>
+    <color name="selected_endColor">#0170bf</color>
+    <color name="profileTextColor">#1b1b1b</color>
+    <color name="transparent">#001b1b1b</color>
+    <color name="grayColorTransparent">#a3545454</color>
+    <color name="black">#000000</color>
+    <color name="selectedTabColor">#001381</color>
+    <color name="toolBarColorPrimary">#7f2ecefe</color>
+    <color name="colorCount">#d63306</color>
+    <color name="likeColor">#f71bbc</color>
+    <color name="ChatColor">#2100a3</color>
+    <color name="deleteStartColor">#ff3344</color>
+    <color name="deleteEndColor">#ce434f</color>
+    <color name="deleteStartSelectedColor">#9b0a16</color>
+    <color name="deleteEndSelectedColor">#a61f2a</color>
+    <color name="logoutStartColor">#ffb133</color>
+    <color name="logoutEndColor">#e9ae2d</color>
+    <color name="logoutStartSelectedColor">#ffbe33</color>
+    <color name="logoutEndSelectedColor">#ffbe33</color>
+    <color name="editMetaTitleColor">#2b0026</color>
+    <color name="brown">#6cec9705</color>
+    <color name="green">#00790c</color>
+    <color name="prubble">#6f0079</color>
+    <color name="blueDark">#000879</color>
+
+
+    <color name="image_btn_start">#450053</color>
+    <color name="image_btn_end">#73007e</color>
+    <color name="image_btn_start_selected">#9600bc</color>
+    <color name="image_btn_end_selected">#da05ef</color>
+
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.UserProfileViewActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_activity_background"
+        android:layoutDirection="ltr">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/sliderPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="180dp">
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/chatBtn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/chat_background"
+                        android:onClick="@{viewModel::startChat}"
+                        android:text="@string/iconChat"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/likeBtn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/like_background"
+                        android:onClick="@{viewModel::favUser}"
+                        android:text="@string/iconHeart"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/moreBtn"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/more_background"
+                        android:onClick="@{viewModel::showMoreInfo}"
+                        android:text="@string/iconCategory"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_xlarge" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:id="@+id/profileAvatar"
+                    imageUrlCircle="@{viewModel.getFullAvatarUrl()}"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginRight="50dp" />
+
+                <com.relgram.app.app.library.PersianTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/sliderPager"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/profileAvatar"
+                    android:background="@drawable/user_name_back"
+                    android:padding="5dp"
+                    android:text="@{viewModel.firstName}"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:id="@+id/ageLocationBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profileAvatar"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/user_city_age_background"
+                    android:padding="5dp">
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@{viewModel.getFullUserAge()}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard" />
+
+                    <com.relgram.app.app.library.IconTextView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:text="@string/iconFilter"
+                        android:textColor="@color/gray_color_dark"
+                        android:textSize="@dimen/text_size_large" />
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="@{viewModel.getFullLocation()}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard" />
+                </LinearLayout>
+
+                <android.support.design.card.MaterialCardView
+                    android:id="@+id/aboutMeText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ageLocationBar"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:padding="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/aboutMe"
+                        android:textColor="@color/selectedTabColor"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@{viewModel.aboutMe}"
+                        android:textColor="@color/black" />
+
+                </android.support.design.card.MaterialCardView>
+
+                <android.support.design.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/aboutMeText"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="5dp">
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:text="@string/aboutSpouse"
+                        android:textColor="@color/selectedTabColor"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@{viewModel.aboutSpouse}"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_standard" />
+
+                </android.support.design.card.MaterialCardView>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,115 @@
+<resources>
+    <string name="app_name" translatable="false">RelGram</string>
+    <string name="title_activity_contact" translatable="false">ContactActivity</string>
+    <string name="mobileNumber" translatable="false">شماره موبایل</string>
+    <string name="login" translatable="false">ورود</string>
+    <string name="name" translatable="false">نام</string>
+    <string name="familyName" translatable="false">نام خانوادگی</string>
+    <string name="mobile" translatable="false">شماره موبایل</string>
+    <string name="sex" translatable="false">انتخاب جنسیت</string>
+    <string name="birthDate" translatable="false">تاریخ تولد</string>
+    <string name="city" translatable="false">انتخاب شهر</string>
+    <string name="province" translatable="false">انتخاب استان</string>
+    <string name="email" translatable="false">ایمیل</string>
+    <string name="aboutMe" translatable="false">متنی درباره خودم</string>
+    <string name="aboutSpouse" translatable="false">متنی درباره همسرم</string>
+    <string name="register" translatable="false">ثبت نام</string>
+    <string name="activationCode" translatable="false">کد فعال سازی</string>
+    <string name="activationCodeWrong" translatable="false">کد فعال سازی اشتباه می باشد.</string>
+    <string name="finishRegister" translatable="false">تکمیل ثبت نام</string>
+    <string name="mobileRegisterdBefore" translatable="false">این شماره موبایل قبلا ثبت نام کرده است .</string>
+    <string name="notActivate" translatable="false"> فعال نشده.</string>
+    <string name="expireDate" translatable="false"> اشتراک ویژه تا تاریخ :</string>
+    <string name="buyCharge" translatable="false"> تمدید اشتراک</string>
+    <string name="editProfile" translatable="false"> ویرایش پروفایل</string>
+    <string name="logoutAccount" translatable="false">خروج از حساب</string>
+    <string name="deleteAcount" translatable="false"> حذف حساب کاربری</string>
+    <string name="sale" translatable="false"> ساله</string>
+    <string name="showInformation" translatable="false"> نمایش اطلاعات</string>
+
+    <string name="tabProfile" translatable="false">پروفایل</string>
+    <string name="tabSearch" translatable="false">جستجو</string>
+    <string name="tabUsers" translatable="false">آخرین کاربران اضافه شده</string>
+    <string name="tabFavorites" translatable="false">علاقه مندی ها</string>
+    <string name="tabChat" translatable="false">چت</string>
+    <string name="pleaseSelectCity" translatable="false">لطفا شهر را انتخاب کنید .</string>
+    <string name="favMe" translatable="false">من را پسندیدن</string>
+    <string name="meFavThose" translatable="false">من پسندیدم</string>
+    <string name="toman" translatable="false">تومان</string>
+    <string name="addtoFavSuccesfull" translatable="false">به علاقه مندی هاس شما اضافه شد .</string>
+    <string name="beforeAddToFavSuccesfull" translatable="false">قبلا این کاربر اضافه شده است .</string>
+    <string name="chatStarted" translatable="false">چت آغاز شد به صفحه چت بروید .</string>
+    <string name="enterMessage" translatable="false">پیام خود را بنویسید ...</string>
+    <string name="send" translatable="false">ارسال</string>
+    <string name="deleteAccountTitle" translatable="false">حذف حساب کاربری</string>
+    <string name="deleteAccountMessage" translatable="false">آیا میخواهید حساب کاربری خود را به طور کامل حذف کنید ؟</string>
+    <string name="exitAccountTitle" translatable="false">خروج از حساب کاربری</string>
+    <string name="exitAccountMessage" translatable="false">آیا می خواهید از حساب کاربری خود خارج شوید ؟</string>
+    <string name="dialogNo" translatable="false">خیر</string>
+    <string name="dialogYes" translatable="false">بله</string>
+    <string name="baseInfo" translatable="false">اطلاعات پایه</string>
+    <string name="myMetaData" translatable="false">معیارهای خودم</string>
+    <string name="spouseMetaData" translatable="false">معیارهای همسرم</string>
+    <string name="sendInfo" translatable="false">ثبت اطلاعات</string>
+    <string name="sendInfoSucessfull" translatable="false">ذخیره اطلاعات موفق بود</string>
+    <string name="gallery" translatable="false">گالری</string>
+    <string name="addImage" translatable="false">اضافه گردن عکس</string>
+    <string name="uploadSuccesfully" translatable="false">آپلود موفقیت آمیز بود .</string>
+    <string name="uploadNotSuccesfully" translatable="false">آپلود با شکست مواجهه شد ... لطفا عکس های سایز کوچکتری استفاده کنید</string>
+    <string name="moreThan5Image" translatable="false">شما میتوانید حداکثر ۵ عکس آپلود کنید</string>
+    <string name="loading" translatable="false">لطفا منتظر بمانید</string>
+    <string name="sendTicket" translatable="false">ارسال تیکت</string>
+    <string name="roles" translatable="false">قوانین</string>
+    <string name="ahkamEzdevaj" translatable="false">احکام ازدواج</string>
+    <string name="contactUs" translatable="false">ارتباط با ما</string>
+    <string name="about" translatable="false">درباره نرم افزار</string>
+    <string name="settings" translatable="false">تنظیمات</string>
+    <string name="relgram" translatable="false">رل گرام</string>
+    <string name="contactUsList" translatable="false">لیست ارتباط های قبلی شما</string>
+    <string name="contactUsNew" translatable="false">ارسال جدید</string>
+    <string name="titleContact" translatable="false">عنوان</string>
+    <string name="textContact" translatable="false">توضیحات</string>
+    <string name="pleaseFillAllField" translatable="false">لطفا تمام فیلد ها رو پر کنید .</string>
+    <string name="version" translatable="false">نسخه نرم افزار :</string>
+    <string name="notifications" translatable="false">پیام های سیستمی</string>
+    <string name="IAcceptRoles" translatable="false">من قوانین استفاده از نرم افزار را می پذیرم</string>
+    <string name="men" translatable="false">آقا</string>
+    <string name="women" translatable="false">خانم</string>
+    <string name="newVersionExist" translatable="false">نسخه جدید نرم افزار منتشر شده است</string>
+    <string name="newVersionTitle" translatable="false">نسخه جدید نرم افزار</string>
+    <string name="yourVersion" translatable="false">نسخه شما :</string>
+    <string name="newVersion" translatable="false">نسخه جدید :</string>
+    <string name="userDetails" translatable="false">جزییات کاربر</string>
+    <string name="chatWith" translatable="false">چت</string>
+    <string name="downloadApp" translatable="false">دانلود نسخه جدید و نصب</string>
+    <string name="birthDateInvalid" translatable="false">تاریخ تولد نا معتبر می باشد.</string>
+    <string name="changes" translatable="false">تغییرات نسخه جدید</string>
+    <string name="youNeedExpDate" translatable="false">شما دارای اشتراک ویژه نیستید.</string>
+    <string name="youAreNotActive" translatable="false">حساب کاربری شما غیر فعال شده است</string>
+    <string name="registerError" translatable="false">ثبت نام با شکست مواجهه شد ... لطفا عکس های سایز کوچکتری استفاده کنید</string>
+    <string name="noUserInSearch" translatable="false">متاسفانه در این شهر کاربری ثبت نام نکرده است .</string>
+
+
+    <string name="pleaseFillMobile" translatable="false">لطفا موبایل را وارد کنید .</string>
+    <string name="pleaseFillValidMobile" translatable="false">لطفا شماره موبایل را صحیح وارد کنید .</string>
+    <string name="pleaseFillFirstName" translatable="false">لطفا نام خود را وارد کنید .</string>
+    <string name="pleaseFillLastName" translatable="false">لطفا نام خانوادگی خود را وارد کنید .</string>
+    <string name="pleaseFillBirthDate" translatable="false">لطفا تاریخ تولد خود را وارد کنید .</string>
+    <string name="pleaseFillProfileAvatar" translatable="false">لطفا عکس پروفایل خود را انتخاب کنید .</string>
+    <string name="copyRight" translatable="false">تمامی فعالیت های این نرم افزار طبق قوانین جمهوری اسلامی ایران می باشد .</string>
+
+
+    <string name="blockDialogTitle" translatable="false">مسدود سازی</string>
+    <string name="blockDialogText" translatable="false">آیا می خواهید این کاربر را مسدود کنید ؟</string>
+    <string name="unBlockDialogTitle" translatable="false">رفع انسداد کاربر</string>
+    <string name="unBlockDialogText" translatable="false">آیا میخواهید این کاربر از انسداد در بیاورید ؟</string>
+    <string name="blockSuccessfully" translatable="false">کاربر مسدود شد .</string>
+    <string name="blockByAnother" translatable="false">کاربر قبلا شما رو مسدود کرده است</string>
+    <string name="unBlockSuccessfully" translatable="false">رفع انسداد با موفقیت انجام شد.</string>
+    <string name="unBlockYouCant" translatable="false">کاربر شما رو مسدود کرده ، فقط او میتواند رفع انسداد کند.</string>
+    <string name="thisChatIsBlocked" translatable="false">این چت مسدود شده است .</string>
+    <string name="errorInSendChat" translatable="false">خطایی در ارسال چت رخ داده است .</string>
+    <string name="chargeNeed" translatable="false">برای استفاده از امکانات چت نرم افزار باید اشتراک ویژه داشته باشید .</string>
+    <string name="help_to_charge" translatable="false">لطفا توجه کنید پس از پرداخت حداکثر سه ساعت طول میکشد تا اکانت شما شارژ شود.</string>
+
+</resources>

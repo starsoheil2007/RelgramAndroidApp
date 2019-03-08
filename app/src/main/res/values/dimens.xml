@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="tab_icon_size">30sp</dimen>
+    <dimen name="bottom_bar_height">150dp</dimen>
+    <dimen name="status_bar_height">0dp</dimen>
+    <dimen name="action_bar_height">56dp</dimen>
+
+</resources>

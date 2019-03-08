@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.PaymentActivityViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/payment_background">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main" />
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/help"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text="@string/help_to_charge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small" />
+
+        <android.support.v7.widget.RecyclerView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mainList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/help"
+            android:layout_marginTop="10dp"
+            tools:context=".view.activities.MainActivity" />
+
+        <ProgressBar
+            android:id="@+id/progressCircular"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:theme="@style/AppTheme.WhiteAccent"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+</layout>

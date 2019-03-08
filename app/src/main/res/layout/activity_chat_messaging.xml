@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.ChatMessagingActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/include"
+            android:fitsSystemWindows="true">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/messageList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/layoutChatbox" />
+
+            <!-- A horizontal line between the chatbox and RecyclerView -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_above="@+id/layoutChatbox"
+                android:background="#dfdfdf" />
+
+            <LinearLayout
+                android:id="@+id/layoutChatbox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#ffffff"
+                android:minHeight="48dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPickImage"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/chat_image_btn_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/iconCamera"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+
+                <Button
+                    android:id="@+id/buttonChatboxSend"
+                    android:layout_width="64dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/btn_background"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/iconSend"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+
+                <com.relgram.app.app.library.PersianEditText
+                    android:id="@+id/edittextChatbox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="@string/enterMessage"
+                    android:maxLines="6" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

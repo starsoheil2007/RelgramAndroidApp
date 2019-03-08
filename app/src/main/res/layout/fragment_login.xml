@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.LoginFragmentViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/splash_back" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/relgram" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/besm"
+            android:layout_width="150dp"
+            android:layout_below="@+id/logoImage"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/bem" />
+
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/mainText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/besm"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center"
+            android:text="@{viewModel.mainText}"
+            android:textColor="@color/white" />
+
+        <com.relgram.app.app.library.PersianEditText
+            android:id="@+id/mobileNumber"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/mainText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_edit_txt_background"
+            android:hint="@string/mobileNumber"
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:background="@mipmap/main_btn"
+                android:paddingRight="80dp"
+                android:text="@string/login"
+                android:textAlignment="textStart"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+        <com.relgram.app.app.library.PersianTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/copyRight"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+</layout>

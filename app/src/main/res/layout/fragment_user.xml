@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.UserFragmentViewModel" />
+    </data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.activities.MainActivity">
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/profileAvatar"
+            imageUrlCircle="@{viewModel.getFullAvatarUrl()}"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp" />
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profileAvatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/user_name_back"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@{viewModel.getFullName()}"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large" />
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userName"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/profile_card_view_back"
+            android:minHeight="250dp"
+            card_view:cardElevation="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/statusBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.relgram.app.app.library.IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/iconChatCount"
+                            android:textColor="@color/profileTextColor"
+                            android:textSize="@dimen/text_size_xxxxlarge" />
+
+                        <com.relgram.app.app.library.PersianTextView
+                            android:id="@+id/chatCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{viewModel.getChatCountText()}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.relgram.app.app.library.IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/iconHeartBoxOut"
+                            android:textColor="@color/profileTextColor"
+                            android:textSize="@dimen/text_size_xxxxlarge" />
+
+                        <com.relgram.app.app.library.PersianTextView
+                            android:id="@+id/flowerCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{viewModel.getFlowerCountText()}" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <com.relgram.app.app.library.IconTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/iconHeartBox"
+                            android:textColor="@color/profileTextColor"
+                            android:textSize="@dimen/text_size_xxxxlarge" />
+
+                        <com.relgram.app.app.library.PersianTextView
+                            android:id="@+id/flowingCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@{viewModel.getFlowingCountText()}" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/chargeBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@+id/statusBar"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right|center"
+                    android:orientation="horizontal">
+
+
+                    <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/buyChargeBtn"
+                        android:layout_width="100dp"
+                        android:layout_height="40dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/btn_background"
+                        android:text="@string/buyCharge"
+                        android:textColor="@color/white" />
+
+                    <com.relgram.app.app.library.PersianTextView
+                        android:id="@+id/expireDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:text="@{viewModel.getExpireDateText()}"
+                        android:textColor="@color/profileTextColor"
+                        android:textSize="@dimen/text_size_large" />
+
+                </LinearLayout>
+
+                <com.relgram.app.app.library.PersianTextView
+                    android:id="@+id/userPageText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/chargeBar"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/text_size_standard" />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </RelativeLayout>
+
+</layout>

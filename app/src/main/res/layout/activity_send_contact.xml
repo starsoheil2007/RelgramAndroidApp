@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.SendContactActivityViewModel" />
+    </data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".view.activities.MainActivity">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main" />
+
+
+        <!--<RelativeLayout style="@style/FormEditLayout">-->
+
+        <!--<android.support.v7.widget.AppCompatSpinner-->
+        <!--android:id="@+id/contactType"-->
+        <!--style="@style/EditTextFormField"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp" />-->
+
+        <!--<com.relgram.app.app.library.IconTextView style="@style/spinnerArrow" />-->
+
+        <!--</RelativeLayout>-->
+
+        <com.relgram.app.app.library.PersianTextInputEditText
+            android:id="@+id/title"
+            style="@style/EditTextFormField"
+            android:hint="@string/titleContact"
+            android:inputType="textAutoComplete" />
+
+
+        <com.relgram.app.app.library.PersianTextInputEditText
+            android:id="@+id/text"
+            style="@style/TextAreaFormFieldContact"
+            android:hint="@string/textContact"
+            android:inputType="textAutoComplete" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/sendContactBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_background"
+            android:text="@string/sendTicket"
+            android:textColor="@color/white" />
+
+
+    </LinearLayout>
+
+</layout>

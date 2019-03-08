@@ -1,0 +1,43 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+	package
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:16:5-49
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:1-21:12
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:15:11-69
+uses-permission#android.permission.VIBRATE
+ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:18:5-66
+	android:name
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:18:22-63
+application
+ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml:20:5-20
+uses-sdk
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		ADDED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml
+		INJECTED from /MyFiles/Aa-Android-Project/hamsanapp/MaterialDatePicker/src/main/AndroidManifest.xml

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.ListNotitficationViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/notitfication_back"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.title}"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/text_size_standard" />
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@{viewModel.text}"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_standard" />
+
+    </LinearLayout>
+
+</layout>

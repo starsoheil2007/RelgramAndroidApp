@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- For Text Size -->
+    <dimen name="text_size_xxxsmall">3sp</dimen>
+    <dimen name="text_size_xxsmall">7sp</dimen>
+    <dimen name="text_size_xsmall">12sp</dimen>
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_standard">16sp</dimen>
+    <dimen name="text_size_large">18sp</dimen>
+    <dimen name="text_size_xlarge">22sp</dimen>
+    <dimen name="text_size_xxlarge">25sp</dimen>
+    <dimen name="text_size_xxxlarge">28sp</dimen>
+    <dimen name="text_size_xxxxlarge">35sp</dimen>
+    <dimen name="text_size_xxxxxlarge">40sp</dimen>
+    <dimen name="text_size_xxxxxxlarge">50sp</dimen>
+
+
+</resources>

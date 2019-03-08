@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.RegisterFragmentViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:context=".view.activities.MainActivity">
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/name"
+                style="@style/EditTextFormField"
+                android:hint="@string/name"
+                android:inputType="textAutoComplete" />
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/familyName"
+                style="@style/EditTextFormField"
+                android:hint="@string/familyName"
+                android:inputType="textAutoComplete" />
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/mobile"
+                style="@style/EditTextFormField"
+                android:hint="@string/mobile"
+                android:inputType="phone" />
+
+
+            <info.hoang8f.android.segmented.SegmentedGroup xmlns:segmentedgroup="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/segmentedView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                segmentedgroup:sc_border_width="2dp"
+                segmentedgroup:sc_checked_text_color="@color/white"
+                segmentedgroup:sc_corner_radius="10dp"
+                segmentedgroup:sc_tint_color="@color/gray_color_dark">
+
+                <RadioButton
+                    android:id="@+id/womenOpt"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:padding="10dp"
+                    android:text="@string/women" />
+
+                <RadioButton
+                    android:id="@+id/menOpt"
+                    style="@style/RadioButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="10dp"
+                    android:text="@string/men" />
+
+
+            </info.hoang8f.android.segmented.SegmentedGroup>
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/birthDate"
+                style="@style/EditTextFormField"
+                android:hint="@string/birthDate"
+                android:inputType="textAutoComplete" />
+
+
+            <RelativeLayout style="@style/FormEditLayout">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/province"
+                    style="@style/SpinnerFormField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:onItemSelected="@{(parent,view,pos,id)->viewModel.onSelectItem(parent,view,pos,id)}" />
+
+                <com.relgram.app.app.library.IconTextView style="@style/spinnerArrow" />
+            </RelativeLayout>
+
+
+            <RelativeLayout style="@style/FormEditLayout">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/city"
+                    style="@style/SpinnerFormField"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:onItemSelected="@{(parent,view,pos,id)->viewModel.onCitySelectItem(parent,view,pos,id)}" />
+
+                <com.relgram.app.app.library.IconTextView style="@style/spinnerArrow" />
+
+            </RelativeLayout>
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/email"
+                style="@style/EditTextFormField"
+                android:hint="@string/email"
+                android:inputType="textAutoComplete" />
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/aboutMe"
+                style="@style/TextAreaFormField"
+                android:hint="@string/aboutMe"
+                android:inputType="textAutoComplete" />
+
+
+            <com.relgram.app.app.library.PersianTextInputEditText
+                android:id="@+id/aboutSpouse"
+                style="@style/TextAreaFormField"
+                android:hint="@string/aboutSpouse"
+                android:inputType="textAutoComplete" />
+
+            <com.relgram.app.app.library.IconTextView
+                android:id="@+id/cameraBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="@string/iconCamera"
+                android:textColor="@color/white"
+                android:textSize="50dp" />
+
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/profileAvatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/registerBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_background"
+                android:text="@string/register"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

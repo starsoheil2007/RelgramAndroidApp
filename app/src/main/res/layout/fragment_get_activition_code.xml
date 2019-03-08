@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.GetActivationCodeFragmentViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layoutDirection="ltr"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/appCompatImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/splash_back" />
+
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/logoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:scaleType="fitCenter"
+            android:src="@mipmap/relgram" />
+
+
+        <com.relgram.app.app.library.PersianEditText
+            android:id="@+id/code"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/logoImage"
+            android:layout_marginTop="200dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/login_edit_txt_background"
+            android:hint="@string/activationCode"
+            android:inputType="phone"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnFinish"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/code"
+            android:background="@mipmap/main_btn"
+            android:paddingRight="80dp"
+            android:text="@string/finishRegister"
+            android:textAlignment="textStart"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+</layout>

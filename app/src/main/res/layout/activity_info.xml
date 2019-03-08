@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.InfoActivityViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/info_activity_background"
+        android:layoutDirection="ltr">
+
+        <include
+            android:id="@+id/include"
+            layout="@layout/toolbar_main" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/include">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/relgram" />
+
+            <com.relgram.app.app.library.PersianTextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="شبکه اجتماعی همسر یابی"
+                android:textColor="@color/white" />
+
+            <com.relgram.app.app.library.PersianTextView
+                android:id="@+id/version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:gravity="center"
+                android:text="@{viewModel.fullVersion}"
+                android:textColor="@color/colorCount"
+                android:textSize="@dimen/text_size_standard" />
+
+            <com.relgram.app.app.library.PersianTextView
+                android:id="@+id/telegram"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/version"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="کانال  تلگرام"
+                android:textColor="@color/white" />
+
+
+            <com.relgram.app.app.library.PersianTextView
+                android:id="@+id/channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/telegram"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@Relgram_com"
+                android:textColor="@color/white" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</layout>

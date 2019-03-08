@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "284792338394",
+    "firebase_url": "https://relgram-34655.firebaseio.com",
+    "project_id": "relgram-34655",
+    "storage_bucket": "relgram-34655.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:284792338394:android:b05bbc4a86859290",
+        "android_client_info": {
+          "package_name": "com.relgram.app.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "284792338394-d9cehl108dmc3g19a2djgev3mvhmb3v9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsDQ5YaOFlMghTP7uUjwofYgrSc8LDR7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.ListMetaDataViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="3dp"
+        android:background="@drawable/meta_back">
+
+        <com.relgram.app.app.library.PersianTextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text="@{viewModel.meta.title}"
+            android:textColor="@color/editMetaTitleColor"
+            android:textSize="@dimen/text_size_large" />
+
+        <CheckBox
+            android:id="@+id/selected"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:orientation="vertical"
+            android:text="@{viewModel.meta.values[0].title}" />
+    </RelativeLayout>
+</layout>

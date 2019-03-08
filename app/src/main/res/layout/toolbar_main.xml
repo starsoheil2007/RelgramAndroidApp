@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="toolBarViewModel"
+            type="com.relgram.app.view_models.BaseViewModel" />
+
+    </data>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/mainToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/status_bar_background"
+        android:layoutDirection="rtl"
+        android:minHeight="@dimen/action_bar_height"
+        android:paddingTop="@dimen/status_bar_height"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.relgram.app.app.library.PersianTextView
+                android:id="@+id/toolbarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_standard" />
+
+            <com.relgram.app.app.library.IconTextView
+                android:id="@+id/iconUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/iconWarning"
+                android:textColor="@drawable/toolbar_text_selector"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+            <com.relgram.app.app.library.IconTextView
+                android:id="@+id/iconMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/iconMessage"
+                android:textColor="@drawable/toolbar_text_selector"
+                android:textSize="@dimen/text_size_xxlarge" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+</layout>
+    
+

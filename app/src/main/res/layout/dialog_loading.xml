@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.relgram.app.app.view_models.DialogLoadingViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/dialog_background">
+
+            <ProgressBar
+                android:id="@+id/progress_circular"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:theme="@style/AppTheme.Primary" />
+
+            <com.relgram.app.app.library.PersianTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/progress_circular"
+                android:gravity="center"
+                android:text="@{viewModel.loadingText}"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_standard" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</layout>
